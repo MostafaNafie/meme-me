@@ -120,6 +120,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Rewrite TOP and BOTTOM if the user didn't change the text
+        if textField.text == "" && currentTappedTextField == topTextField {
+            textField.text = "TOP"
+        } else if textField.text == "" && currentTappedTextField == bottomTextField {
+            textField.text = "BOTTOM"
+        }
         // Dismiss the keyboard when the user presses enter
         textField.resignFirstResponder()
         return true
