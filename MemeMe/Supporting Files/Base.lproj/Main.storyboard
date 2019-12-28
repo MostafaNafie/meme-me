@@ -133,7 +133,7 @@
                                 <rect key="frame" x="0.0" y="-11" width="375" height="56"/>
                                 <items>
                                     <navigationItem id="5is-aG-nSo">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="vcA-zV-pyX">
+                                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="save" id="vcA-zV-pyX">
                                             <connections>
                                                 <action selector="activityView:" destination="BYZ-38-t0r" id="4Nc-GT-wHh"/>
                                             </connections>
@@ -168,6 +168,7 @@
                         <outlet property="imagePickerView" destination="CEE-nt-Toe" id="SbX-MF-a6e"/>
                         <outlet property="imageView" destination="CEE-nt-Toe" id="a7v-hF-6Vq"/>
                         <outlet property="navbar" destination="9lS-X8-i5h" id="dpo-hW-BsD"/>
+                        <outlet property="saveButton" destination="vcA-zV-pyX" id="zp0-Fc-268"/>
                         <outlet property="toolbar" destination="5Ed-aF-mLd" id="6GJ-wh-Qia"/>
                         <outlet property="topTextField" destination="SHF-hF-6XW" id="6QY-al-fuI"/>
                     </connections>

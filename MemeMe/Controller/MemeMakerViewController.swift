@@ -19,6 +19,7 @@ class MemeMakerViewController: UIViewController, UIImagePickerControllerDelegate
 	@IBOutlet weak var imageView: UIImageView!
 	@IBOutlet weak var toolbar: UIToolbar!
 	@IBOutlet weak var navbar: UINavigationBar!
+	@IBOutlet weak var saveButton: UIBarButtonItem!
 	
 	// MARK: Properties
 	
@@ -152,6 +153,7 @@ class MemeMakerViewController: UIViewController, UIImagePickerControllerDelegate
 	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 		if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
 			imagePickerView.image = image
+			saveButton.isEnabled = true
 		}
 		dismiss(animated: true, completion: nil)
 	}
