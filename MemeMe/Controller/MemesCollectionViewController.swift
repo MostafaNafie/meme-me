@@ -21,8 +21,6 @@ class MemesCollectionViewController: UIViewController, UICollectionViewDelegate,
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +28,8 @@ class MemesCollectionViewController: UIViewController, UICollectionViewDelegate,
         collectionView.reloadData()
     }
     
+	// MARK: CollectionView Methods
+	
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return memes.count
     }
@@ -42,15 +42,5 @@ class MemesCollectionViewController: UIViewController, UICollectionViewDelegate,
         cell.memeImageView.image = meme.memedImage
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
